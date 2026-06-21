@@ -1,0 +1,55 @@
+name: mani_kannaku
+description: "Mani Kanakku - Time Calculator & Billing App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^8.1.3
+  equatable: ^2.0.5
+  shared_preferences: ^2.2.2
+  intl: ^0.20.2
+  share_plus: ^7.2.1
+  flutter_native_splash: ^2.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+# ── Launcher icon configuration ──────────────────────────────────────────────
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo_launcher.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/logo_launcher.png"
+  web:
+    generate: false
+
+# ── Splash screen configuration ───────────────────────────────────────────────
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/images/logo.png
+  android: true
+  ios: true
+  android_12:
+    image: assets/images/logo.png
+    color: "#FFFFFF"
+    icon_background_color: "#FFFFFF"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/logo_launcher.png
